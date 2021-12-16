@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<html>
+    <style>
+        html {
+            animation: a 1.0s linear infinite alternate;
+            background-color: black;
+        }
+    
+        @keyframes a {
+            from { filter: hue-rotate(0deg) tran; }
+            to { filter: hue-rotate(360deg); }
+        }
+
+        @keyframes b {
+            from { transform:translateX(0) }
+            to { transform: translateX(calc(100% - 300px)); }
+        }
+    </style>
+    <h1 style="color:rgb(233,135,60); animation:b 5.0s linear infinite alternate">Under Construction</h1>
+    <img href="workinprogress.png"/>
+</html>
