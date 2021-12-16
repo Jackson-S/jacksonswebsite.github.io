@@ -1,14 +1,12 @@
 <meta charset="UTF-8">
-
 <html>
     <style>
-        html {
-            animation: a 1.0s linear infinite alternate;
+        body {
             background-color: black;
         }
     
         @keyframes a {
-            from { filter: hue-rotate(0deg) tran; }
+            from { filter: hue-rotate(0deg); }
             to { filter: hue-rotate(360deg); }
         }
 
@@ -17,8 +15,6 @@
             to { transform: translateX(calc(100% - 300px)); }
         }
     </style>
-    <h1 style="color:rgb(233,135,60); animation:b 5.0s linear infinite alternate">Under Construction</h1>
-    <div style="width: 100%; align-items: center">
-        <img src="workinprogress.png">
-    </div>
+    <h1 style="color:rgb(233,135,60); animation:a 1.0s linear infinite alternate,b 5.0s linear infinite alternate">Under Construction</h1>
+    <img src="workinprogress.png" style="animation:a 1.0s linear infinite alternate">
 </html>
