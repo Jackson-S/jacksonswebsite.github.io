@@ -6,15 +6,27 @@
         }
     
         @keyframes a {
-            from { filter: hue-rotate(0deg); }
             to { filter: hue-rotate(360deg); }
         }
 
         @keyframes b {
-            from { transform:translateX(0) }
-            to { transform: translateX(calc(100% - 300px)); }
+            to { transform: skew(30deg, 20deg) translateX(300px); }
+        }
+
+        @keyframes c {
+            to { visibility: hidden; }
+        }
+
+        @keyframes d {
+            to { transform: rotate(360deg); }
         }
     </style>
-    <h1 style="color:rgb(233,135,60); animation:a 1.0s linear infinite alternate,b 5.0s linear infinite alternate">Under Construction</h1>
-    <img src="workinprogress.png" style="animation:a 1.0s linear infinite alternate">
+    <marquee>
+        <h1 style="color:rgb(233,135,60); animation:a 1.0s linear infinite alternate,c 0.5s steps(3, start) infinite">Under Construction</h1>
+    </marquee>
+    <div style="display:inline-grid; width:80%; animation:b 1s linear infinite alternate,d 1s linear infinite alternate;">
+        <img src="workinprogress.png" width=100% style="grid-column:1; animation:a 1.0s linear infinite alternate,b 1s linear infinite alternate,d 10.0s linear infinite alternate">
+        <img src="workinprogress.png" width=100% style="grid-column:2; animation:a 1.0s linear infinite alternate,b 1s linear infinite alternate,d 10.0s linear infinite alternate">
+        <img src="workinprogress.png" width=100% style="grid-column:3; animation:a 1.0s linear infinite alternate,b 1s linear infinite alternate,d 10.0s linear infinite alternate">
+    </div>
 </html>
